@@ -1,0 +1,131 @@
+/*Globales*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** Reset rems **/
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    font-size: 3.8rem;
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 3rem;
+}
+h4 {
+	font-size: 2.6rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Site Header */
+
+/* Barra */
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navegacion a{
+    margin: 2rem;
+    font-size: 2rem;
+    margin-right: 3rem;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/* Main */
+
+.contenedor {
+    max-width: 110rem;
+    width: 100%;
+    margin: 0 auto;
+    
+
+}
+.contenedor2 {
+    max-width: 120rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+.contenedor3 {
+    max-width: 65rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    
+   
+}
+.contenedor h1 {
+    font-weight: bolder;
+
+}
+.contenedor h2{
+
+    text-align: center;
+    font-weight: 800;
+}
+
+
+.equipo {
+    display: flex;
+}
+
+.persona {
+    background-color: #3b6d78;
+    margin: 3rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+.persona p{
+    font-weight: 1rem;
+
+}
+
+.persona h3 {
+    text-transform: uppercase;
+}
+
+.persona a {
+    text-decoration: none;
+    color: black;
+}
+
+.li_especial {
+    padding: 3rem;
+}
+
+.logorrss { 
+    max-width: 1.8rem;
+    height: 1.8rem
+    
+
+}
+
+.contenedor4{
+    width: 100%;
+    position: relative;
+    
+
+    
+}
+  
