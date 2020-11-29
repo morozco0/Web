@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3b6d78;">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" style="font-size: 25px;" href="./index.html">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,20 +20,86 @@
         <div class="container-fluid" style="min-height: 890px;">
             <div class="row" style="margin-top: 30px;">
                 <div class="col-md-5 offset-md-1">
-                    <a href="docentes.html"><img src="img/docentes.png" class="img-fluid" alt="Docentes" width="100%"></a>
+                    <a data-toggle="modal" data-target="#exampleModa2"><img src="img/docentes.png" class="img-fluid" alt="Docentes" width="100%"></a>
                     <div class="carousel-caption" style="color: white;">
                         <h1> DOCENTES</h1>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <a href="alumnos.html"><img src="img/alumnos.png" class="img-fluid" alt="alumnos" href="alumnos.html" width="100%"></a>
+                <div class="col-md-5" >
+                    <a  data-toggle="modal" data-target="#exampleModal"><img src="img/alumnos.png" class="img-fluid" alt="alumnos" href="alumnos.html" width="100%"></a>
                     <div class="carousel-caption" style="color: white;">
                         <h1>  ALUMNOS</h1>
                     </div>
                 </div>
             </div>
-        </div> 
-
+        <div class="modal" tabindex="-1" id="exampleModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <body class="text-center">
+                        <form class="form-signin" action="alumnos.html" method="POST">
+                            <img class="mb-4" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+                            <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+                            <label for="inputEmail" class="sr-only">Email address</label>
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                            <label for="inputPassword" class="sr-only">Password</label>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                            <div class="checkbox mb-3">
+                                <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                                </label>
+                            </div>
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                            <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+                        </form>
+                    </body>
+                </div>
+                <div class="modal-footer">
+                  <a href="alumnos.html"><button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button></a>
+                  <button type="button" class="btn btn-primary">Sign in</button>
+                </div>
+              </div>
+            </div>
+          </div>  
+          <div class="modal" tabindex="-1" id="exampleModa2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <body class="text-center">
+                        <form class="form-signin" action="docentes.html" method="POST">
+                            <img class="mb-4" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+                            <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+                            <label for="inputEmail" class="sr-only">Email address</label>
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                            <label for="inputPassword" class="sr-only">Password</label>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                            <div class="checkbox mb-3">
+                                <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                                </label>
+                            </div>
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                            <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+                        </form>
+                    </body>
+                </div>
+                <div class="modal-footer">
+                  <a href="alumnos.html"><button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button></a>
+                  <button type="button" class="btn btn-primary">Sign in</button>
+                </div>
+              </div>
+            </div>
+          </div>  
     </main>
 
     <footer class="footer mt-auto py-3" style="background-color: #3b6d78;">
